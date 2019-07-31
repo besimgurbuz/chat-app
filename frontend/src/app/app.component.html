@@ -1,13 +1,18 @@
+<header>
+  <h2>Welcome Chat App {{username}}</h2>
+</header>
 <div class="chat-app">
-  <h2>Chat App</h2>
   <div class="messages">
     <div *ngFor="let message of messages" class="message">
-      {{message}}
+    {{message}}
     </div>
   </div>
-
+  <div *ngIf="username == ''" id="username-div">
+    <input [ngStyle]="usernameValidatation ? {'border':'2px solid red'} : null" id="username-input" [(ngModel)]="usernameIn" type="name" placeholder="You sould type your username for chatting!">
+    <button (click)="getUsername(usernameIn)">Enter</button>
+  </div>
   <div class="inputs">
     <input [(ngModel)]="message" (keyup)="$event.keyCode == 13 && sendMessage()" class="message-input" />
-    <button (click)="sendMessage()" class="button">Send</button>
+    <button (click)="username != '' ? sendMessage(): validatorAlert()" class="button">Send</button>
   </div>
 </div>

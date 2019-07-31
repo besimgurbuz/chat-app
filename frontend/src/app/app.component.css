@@ -1,14 +1,17 @@
-
+header {
+  text-align: center;
+  position: sticky;
+  height: 5vh;
+}
 .chat-app {
-  
-  width: 500px;
-  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+  height: 95vh;
   margin: 0 auto;
   background-color: #f1f1f1;
   position: relative;
   border-top: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
 
 }
 .messages {
@@ -16,24 +19,36 @@
 }
 .message {
   text-align: start;
-  border-radius: 5%;
+  border-radius: 2px;
   font-size: 18px;
   padding: 10px;
 }
-
+.message:nth-child(2n) {
+  background-color: #e2e2e2;
+}
+#username-div {
+  text-align: center;
+}
+#username-div > button {
+  height: 30px;
+}
+#username-input {
+  width: 300px;
+  height: 30px;
+}
 .inputs {
-  position: absolute;
+  position: fixed;
+  width: 100vw;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 .message-input {
   width: 70%;
-  height: 30px;
-  border: 1px solid black;
-  border-radius: 5%;
+  height: 40px;
+  border: 2px solid gray;
+  border-radius: 2px;
+  font-size: 19px;
 }
 .button {
   width: 30%;
-  height: 30px;
+  height: 40px;
 }
