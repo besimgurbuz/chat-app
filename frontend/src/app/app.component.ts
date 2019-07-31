@@ -9,14 +9,30 @@ import { ChatService } from './services/chat.service';
 export class AppComponent {
   message:string;
   messages:string[] = [];
+  username:string = "";
+  usernameValidatation:boolean = false;
 
   constructor(private chatService: ChatService) {}
 
   sendMessage() {
-    this.chatService.sendMessage(this.message);
-    this.message = "";
+    if(this.message != "" && this.username != "") {
+      this.chatService.sendMessage(`${this.username} ::: ${this.message}`);
+      this.message = "";
+    }
+    else {
+      this.validatorAlert();
+    }
+  }
+  validatorAlert() {
+    console.log("hello, there");
+    
+    this.usernameValidatation = true;
   }
   
+  getUsername(username:string = "") {
+    if(username != "") this.username = username;
+  }
+
   ngOnInit() {
     console.log("asdfa");
     
