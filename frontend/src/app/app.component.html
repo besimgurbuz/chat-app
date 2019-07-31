@@ -1,0 +1,13 @@
+<div class="chat-app">
+  <h2>Chat App</h2>
+  <div class="messages">
+    <div *ngFor="let message of messages" class="message">
+      {{message}}
+    </div>
+  </div>
+
+  <div class="inputs">
+    <input [(ngModel)]="message" (keyup)="$event.keyCode == 13 && sendMessage()" class="message-input" />
+    <button (click)="sendMessage()" class="button">Send</button>
+  </div>
+</div>
