@@ -31,7 +31,7 @@ Happ Hacing!
 
 ### Screenshot
 
-![alt text](./readme.png)
+![](readme.png)
 
 License
 ----
