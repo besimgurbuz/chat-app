@@ -1,5 +1,5 @@
 # Chat App 
-Simple chat app for web, built with socket.io and angular
+Simple chat app for web, built with node, socket.io and angular
 
 ### Installation
 This app requires TypeScript v3.4+ and Angular v7.1+ to run.
