@@ -7,13 +7,13 @@ This app requires TypeScript v3.4+ to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-`$ cd ./backend`
-`$ npm install` 
-`$ npm start` 
-`open another command prompt on app directory`
-`$ cd frontend` 
-`$ npm install` 
-`$ ng serve -o` 
+ $ cd ./backend
+ $ npm install 
+ $ npm start
+ open another command prompt on app directory
+ $ cd frontend
+ $ npm install
+ $ ng serve -o 
 ```
 
 ### Development
