@@ -20,9 +20,9 @@ Install the dependencies and devDependencies and start the server.
 
 Want to contribute? Great!
 
-This app uses node.js, express and socket.io for fast developing.
-And you can chenk todos, for something to develop.
-Happ Hacing!
+This app uses node.js, express and socket.io for fast developing. <br>
+And you can chenk todos, for something to develop.<br>
+Happy Hacing!
 
 ### Todos
 
