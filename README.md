@@ -21,7 +21,7 @@ Install the dependencies and devDependencies and start the server.
 Want to contribute? Great!
 
 This app uses node.js, express, socket.io and angular for fast developing. <br>
-And you can chenk todos, for something to develop.<br>
+And you can check todos, for something to develop.<br>
 Happy Hacing!
 
 ### Todos
