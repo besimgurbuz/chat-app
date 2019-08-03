@@ -24,8 +24,6 @@ export class AppComponent {
     }
   }
   validatorAlert() {
-    console.log("hello, there");
-    
     this.usernameValidatation = true;
   }
   
