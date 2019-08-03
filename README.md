@@ -28,6 +28,7 @@ Happy Hacing!
 
 - Add night mode
 - Add online users list
+- Add authentication
 
 ### Screenshot
 
